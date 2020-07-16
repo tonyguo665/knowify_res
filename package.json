@@ -1,0 +1,40 @@
+{
+  "name": "knowify_res",
+  "version": "1.0.0",
+  "description": "knowify code challenge",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack -d --mode development --watch",
+    "build": "webpack -d --mode development",
+    "start-dev": "node server/index.js",
+    "start": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyguo665/knowify_res.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonyguo665/knowify_res/issues"
+  },
+  "homepage": "https://github.com/tonyguo665/knowify_res#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

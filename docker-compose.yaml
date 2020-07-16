@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres
+    container_name: db_container
+    volumes:
+      - ./server/db-init:/docker-entrypoint-initdb.d/init.sql
+      - ./server/db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=reservation
+      - POSTGRES_PASSWORD=password
+  
+  server:
+    build: ./
+    container_name: server_container
+    env_file: 
+      - .env
+    ports:
+      - 3000:3000
+    depends_on: 
+      - db
