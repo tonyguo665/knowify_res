@@ -4,7 +4,7 @@ const port = 3000
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
-const router = require('./route');
+const router = require('./routes');
 const path = require('path');
 const db = require('./models/db');
 

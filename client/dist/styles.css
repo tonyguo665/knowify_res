@@ -1,0 +1,15 @@
+.navbar {
+  justify-content: center;
+}
+
+.navbar-item {
+  height: 20vh;
+}
+
+.navbar-item img {
+  max-height: 100%;
+}
+
+.center-text{
+    text-align: center;
+}

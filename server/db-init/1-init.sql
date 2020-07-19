@@ -12,5 +12,15 @@ CREATE TABLE IF NOT EXISTS reservations(
   is_smoking BOOLEAN NOT NULL DEFAULT false,
   is_birthday BOOLEAN NOT NULL DEFAULT false,
   birthday_name VARCHAR(40) DEFAULT NULL,
-  res_date_time TIMESTAMP NOT NULL,
+  res_date_time TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS tables(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(40) NOT NULL,
+  x_pos FLOAT NOT NULL,
+  y_pos FLOAT NOT NULL,
+  width FLOAT NOT NULL,
+  height FLOAT NOT NULL,
+  section VARCHAR(40) NOT NULL
 );
