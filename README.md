@@ -8,6 +8,10 @@ Knowify coding challenge
 - Run `docker-compose up`
 - Open a Google Chrome browser and go to http://localhost:3000
 
+# Table Layout
+
+The tables that are rendered on the table page are built to be as dynamic as possible and the structure of the tables should be set to mimic the table layout of the restaurant in question. The example provided in this application is simple and is used to demonstrate use case, in order to change the layout and add tables the information in the postgres container should be amended. This allows the user to select which table they would like to book and show the already booked tables.
+
 # Specification
 
 The process of making an online reservation for a popular restaurant can produce much anxiety for the user, especially if availability changes during the reservation-making process. Developers of such systems must account for the competition that takes place and attempt to mitigate the user's anxiety as these changes occur.
@@ -51,4 +55,4 @@ The restaurant owner's objective is to secure a reservation from the user, even 
 
 1. Create a GitHub repository for your implementation of this application.
 2. When you have finished development, save your code in a StackBlitz ([https://stackblitz.com/](https://stackblitz.com/)) workspace. You can either upload the files from your computer or connect your repository with the workspace.
-3. Send a link for that workspace and the repository to **developers@knowify.com**.
+3. Send a link for that workspace and the repository to knowify developers
